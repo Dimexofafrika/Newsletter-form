@@ -1,0 +1,306 @@
+@media (min-width: 850px){
+    body{
+        background-color: #36384d;
+        display: grid;
+        place-items: center;
+        justify-items: center;
+        
+    }
+    body .grid-container#contentSection{
+        background-color: #fff;
+        width: 950px;
+        height: 625px;
+        /* margin: auto 0px; */
+        margin-top: 10rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    #contentSection .grid-60{
+        padding-top: 3rem;
+        padding-left: 3rem;
+    }
+    #contentSection .grid-60 .upper{
+        line-height: 1.5rem;
+    }
+    #contentSection .grid-60 .upper h1{
+        font-family: roboto;
+        color: #242845;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    #contentSection .grid-60 .upper p{
+        font-family: roboto;
+        color: #242845;
+        font-size: 16px;
+        width: 90%;
+        line-height: 1.5rem;
+        font-weight: 500;
+    }
+    #contentSection .grid-60 .lists li{
+        list-style: none;
+        display: inline-flex;
+        line-height: 0.1rem;
+    }
+    #contentSection .grid-60 .lists p{
+        font-family: roboto;
+        color: #242845;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    #contentSection .grid-60 .lists li img{
+        padding-right: 1rem;
+    }
+    #contentSection .grid-60 form{
+        padding-top: 1.5rem;
+        line-height: 0.2rem;
+    }
+    #contentSection .grid-60 form .word{
+        display: flex;
+        gap: 15rem;
+    }
+    #contentSection .grid-60 form p{
+        font-size: 12px;
+        font-weight: 700;
+        font-family: roboto;
+        color: #242845;
+    }
+    #contentSection .grid-60 form input{
+        width: 90%;
+        padding: 1.2rem 0rem 1.2rem 1.2rem ;
+        /* border: 0.1rem solid #000; */
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    #contentSection .grid-60 button{
+        width: 95%;
+        padding: 1.2rem 0rem;
+        border: 0.1rem solid #000;
+        border-radius: 0.5rem;
+        margin-bottom: 1.5rem;
+        background-color: #242845;
+        color: #fff;
+        font-family: roboto;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    #contentSection .grid-60 button:hover{
+        cursor: pointer;
+        background-image: linear-gradient(to right, #ff597c, #ff5a6e, #ff5d5f, #ff624f, #ff683f);
+    }
+    
+    
+    #contentSection .grid-40{
+        max-width: 100%;
+        height: 100%;
+        padding: 1rem 1rem 1rem 0rem;
+        /* padding-top: 2rem; */
+    
+    }
+    #contentSection .grid-40 img{
+        max-width: 100%;
+        height: auto;
+        /* padding-top: 2rem; */
+    
+    }
+
+    .error{
+        color: red;
+        background-color: #ffe8e6;
+        border: 0.1rem solid red;
+    
+    }
+    .display{
+        display: none !important;
+    }
+    
+    #confirmationSection{
+        width: 520px;
+        height: 580px;
+        margin-top: 10rem;
+        background-color: #fff;
+        border-radius: 2rem;
+        display: none;
+    }
+    
+    #confirmationSection .grid-100{
+        padding: 4rem 4rem 0rem 4rem;
+    }
+    
+    #confirmationSection .grid-100 img{
+        max-width: 100%;
+        height: auto;
+    }
+    #confirmationSection .grid-100 h1{
+        font-family: roboto;
+        color:  #242845;
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    #confirmationSection .grid-100 p{
+        font-family: roboto;
+        color:  #242845;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        font-weight: 500;
+        margin-top: -1rem;
+        margin-bottom: 3rem;
+    }
+    #confirmationSection .grid-100 p span.email{
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    #confirmationSection .grid-100 button{
+        background-color: #242845;
+        color: #fff;
+        padding: 1rem 0rem;
+        width: 100%;
+        border-radius: 1rem;
+        font-family: roboto;
+        font-size: 1rem;
+    }
+    
+    #confirmationSection .grid-100 button:hover{
+        cursor: pointer;
+        background-image: linear-gradient(to right, #ff597c, #ff5a6e, #ff5d5f, #ff624f, #ff683f);
+    }
+    .mobileimg{
+        display: none;
+    }
+}
+
+
+
+@media (max-width:480px){
+    body{
+        background-color: #fff;
+        margin: 0px;
+    }
+
+    .grid-container#contentSection{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .grid-60{
+        padding-left: 2rem;
+    }
+    .grid-60 h1{
+        font-family: roboto;
+        color:  #242845;
+        font-size: 2.5rem;
+    }
+    .grid-60 p{
+        font-family: roboto;
+        color:  #242845;
+        width: 80%;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+    .grid-60 .lists li{
+        list-style: none;
+        display: inline-flex;
+        gap: 1rem;
+        align-items: baseline;
+    }
+    .grid-60 form .word{
+        display: flex;
+        justify-content: space-between;
+    }
+    .grid-60 form .word p{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .grid-60 form input{
+        width: 85%;
+        padding: 1rem 0rem 1rem 1rem ;
+        border-radius: 0.8rem;
+        margin-bottom: 1rem;
+        
+    }
+    .grid-60 button{
+        width: 90%;
+        padding: 1rem 0rem 1rem 1rem ;
+        border-radius: 0.8rem;
+        margin-bottom: 1rem;
+        background-color: #242845;
+        color: #fff;
+        font-family: roboto;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    #contentSection .grid-60 button:hover{
+        cursor: pointer;
+        background-image: linear-gradient(to right, #ff597c, #ff5a6e, #ff5d5f, #ff624f, #ff683f);
+    }
+    
+    .grid-container#contentSection .grid-40{
+        display: none;
+    }
+    .mobileimg{
+        max-width: 100%;
+        height: auto;
+    }
+    .mobileimg img{
+        width: 100%;
+        height: auto;
+    }
+    #confirmationSection{
+        display: none;
+    }
+    #confirmationSection .grid-100{
+        padding-left: 2.5rem;
+        padding-top: 6rem;
+        padding-right: 2.5rem;
+        
+    }
+    
+    #confirmationSection .grid-100 h1 {
+        font-family: roboto;
+        color:  #242845;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    #confirmationSection .grid-100 p {
+        font-family: roboto;
+        color:  #242845;
+        font-size: 0.95rem;
+        line-height: 1.5rem;
+        font-weight: 500;
+        max-width: 100%;
+        text-align: left;
+        margin-bottom: 14rem;
+        
+        
+    }
+    #confirmationSection .grid-100 p span.email {
+        font-size: 0.9rem;
+        font-weight: bolder;
+    }
+    #confirmationSection .grid-100 button {
+        width: 100%;
+        padding: 1rem 0rem;
+        border-radius: 0.5rem;
+        background-color: #242845;
+        color: #fff;
+        font-family: roboto;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    #confirmationSection .grid-100 button:hover{
+        cursor: pointer;
+        background-image: linear-gradient(to right, #ff597c, #ff5a6e, #ff5d5f, #ff624f, #ff683f);
+    }
+
+    .error{
+        color: red;
+        background-color: #ffe8e6;
+        border: 0.1rem solid red;
+    
+    }
+    .display{
+        display: none !important;
+    }
+}

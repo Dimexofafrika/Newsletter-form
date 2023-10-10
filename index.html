@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>News letter</title>
+</head>
+<body>
+    <div class="grid-container" id="contentSection">
+        <div class="grid-60">
+            <div class="upper">
+                <h1>
+                    Stay updated!
+                </h1>
+                <p>
+                    Join 60,000+ product managers receiving monthly updates on:
+                </p>
+            </div>
+            <div class="lists">
+                <li>
+                    <img src="icon-list.svg" alt="">
+                    <p>Product discovery and building what matters</p>
+                </li> <br>
+                <li>
+                    <img src="icon-list.svg" alt="">
+                    <p>Measuring to ensure updates are a success</p>
+                </li> <br>
+                <li>
+                    <img src="icon-list.svg" alt="">
+                    <p>And much more!</p>
+                </li>
+            </div>
+            <form action="">
+                <div class="word">
+                    <p>Email address</p>
+                    <p class="invalid"></p>
+                </div>
+                <input type="text" placeholder="email@company.com">
+                
+            </form>
+            <button onclick="confirmation()">Subscribe to monthly newsletter</button>
+            
+        </div>
+        <div class="grid-40">
+            <img src="illustration-sign-up-desktop.svg" alt="">
+        </div>
+        <div class="mobileimg">
+            <img src="illustration-sign-up-mobile.svg" alt="">
+        </div>
+    </div>
+    <div class="grid-container" id="confirmationSection">
+        <div class="grid-100">
+            <img src="icon-success.svg" alt="">
+            <h1>Thanks for subscribing!</h1>
+            <p>
+                A confirmation email has been sent to <span class="email"></span>. please
+                open it and click the button inside to confirm you subscription.
+            </p>
+            <button onclick="dismissConfirmation()">Dismiss message</button>
+        </div>
+    </div>
+</body>
+</html>
